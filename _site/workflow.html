@@ -9,7 +9,7 @@
 <meta name="author" content="Xilin Chen">
 <meta name="dcterms.date" content="2022-07-11">
 
-<title>Analytic Workflow for Research Projects</title>
+<title>Manual for Data Analysts - Analytic Workflow for Research Projects</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,26 +20,75 @@ ul.task-list{list-style: none;}
 </style>
 
 
-<script src="workflow_files/libs/clipboard/clipboard.min.js"></script>
-<script src="workflow_files/libs/quarto-html/quarto.js"></script>
-<script src="workflow_files/libs/quarto-html/popper.min.js"></script>
-<script src="workflow_files/libs/quarto-html/tippy.umd.min.js"></script>
-<script src="workflow_files/libs/quarto-html/anchor.min.js"></script>
-<link href="workflow_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="workflow_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="workflow_files/libs/bootstrap/bootstrap.min.js"></script>
-<link href="workflow_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="workflow_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
 
 
 </head>
 
-<body>
+<body class="nav-fixed">
 
-<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
-<div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-  <nav id="TOC" role="doc-toc">
-    <h2 id="toc-title">Table of contents</h2>
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">Manual for Data Analysts</span>
+  </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link active" href="./workflow.html" aria-current="page">Workflow</a>
+  </li>  
+</ul>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc">
+    <h2 id="toc-title">On this page</h2>
    
   <ul>
   <li><a href="#project-steps-overview" id="toc-project-steps-overview" class="nav-link active" data-scroll-target="#project-steps-overview">Project steps overview</a>
@@ -49,7 +98,7 @@ ul.task-list{list-style: none;}
   <ul class="collapse">
   <li><a href="#communication-channels" id="toc-communication-channels" class="nav-link" data-scroll-target="#communication-channels">2.1 communication channels</a></li>
   <li><a href="#set-up-a-project-on-cstar-github" id="toc-set-up-a-project-on-cstar-github" class="nav-link" data-scroll-target="#set-up-a-project-on-cstar-github">2.2 set up a project on cstar github</a></li>
-  <li><a href="#set-up-a-data-folder" id="toc-set-up-a-data-folder" class="nav-link" data-scroll-target="#set-up-a-data-folder">2.2 set up a data folder</a></li>
+  <li><a href="#set-up-a-data-folder" id="toc-set-up-a-data-folder" class="nav-link" data-scroll-target="#set-up-a-data-folder">2.3 set up a data folder</a></li>
   </ul></li>
   <li><a href="#step3-analysis-plan" id="toc-step3-analysis-plan" class="nav-link" data-scroll-target="#step3-analysis-plan">Step3: Analysis Plan</a></li>
   <li><a href="#step4-analysis" id="toc-step4-analysis" class="nav-link" data-scroll-target="#step4-analysis">Step4: Analysis</a>
@@ -61,7 +110,8 @@ ul.task-list{list-style: none;}
   </ul></li>
   </ul>
 </nav>
-</div>
+    </div>
+<!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
@@ -93,10 +143,10 @@ ul.task-list{list-style: none;}
 
 </header>
 
-<p>This document describes the general workflow for data analysis projects in the MedLab. This a a workflow our lab and me have developed over 4 years of working in various of research projects.</p>
+<p>This document describes the general workflow for data analysis projects in the MedLab. This a workflow our lab and I have developed over 4 years of working in various of research projects.</p>
 <section id="project-steps-overview" class="level2">
 <h2 class="anchored" data-anchor-id="project-steps-overview">Project steps overview</h2>
-<p><img src="workflow_diagram.png" class="img-fluid"></p>
+<p><img src="workflow_diagram.png" class="img-fluid" width="337"></p>
 <section id="step1-project-kick-off-meeting" class="level3">
 <h3 class="anchored" data-anchor-id="step1-project-kick-off-meeting">Step1: Project Kick off meeting</h3>
 <p>Every analysis project should have a kick off meeting. We follow the general idea of the <a href="https://www.uab.edu/ccts/images/Paper_sprints.pdf">paper print</a>. In this meeting, the research team, including PI, champion and potential co-authors, should join and have a discussion about research design and research questions. For analysts, we need to understand and clarify the research background and questions, so we can have concrete ideas of the project complexity and feasibility. For example, if the data or the important covaraites are available.</p>
@@ -125,7 +175,7 @@ ul.task-list{list-style: none;}
 <p>All the code and markdown documents should be pushed to the github project. But be careful that don’t push data to the github page.</p>
 </section>
 <section id="set-up-a-data-folder" class="level4">
-<h4 class="anchored" data-anchor-id="set-up-a-data-folder">2.2 set up a data folder</h4>
+<h4 class="anchored" data-anchor-id="set-up-a-data-folder">2.3 set up a data folder</h4>
 <p>Data should be saved on Maize or Dropbox. If it’s medicare data, save on Maize. Other than Medicare data, we save data on UM Dropbox. Raw data and model results should not be save on github.</p>
 <p>Use the same project name on github to name data folder, so it’s easier to find the corresponding data in the future for the projects. Every project should have it’s own data folder.</p>
 </section>
@@ -155,11 +205,12 @@ ul.task-list{list-style: none;}
 <section id="step5-finish-analysis" class="level3">
 <h3 class="anchored" data-anchor-id="step5-finish-analysis">Step5: Finish Analysis</h3>
 <p>After the analysis is done, spend sometime to organize the code so that it’s easier to reference back in the future. I have used the R package <a href="https://cran.r-project.org/web/packages/targets/index.html">targets</a> to manage my analytic workflow.</p>
+
+
 </section>
 </section>
 
-</main>
-<!-- /main column -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

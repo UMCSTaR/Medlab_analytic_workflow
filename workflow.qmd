@@ -10,11 +10,11 @@ format:
 editor: visual
 ---
 
-This document describes the general workflow for data analysis projects in the MedLab. This a a workflow our lab and me have developed over 4 years of working in various of research projects. 
+This document describes the general workflow for data analysis projects in the MedLab. This a workflow our lab and I have developed over 4 years of working in various of research projects.
 
 ## Project steps overview
 
-![](workflow_diagram.png)
+![](workflow_diagram.png){width="337"}
 
 ### Step1: Project Kick off meeting
 
@@ -30,25 +30,19 @@ If the analyst is already familiar with the data or research, it's also helpful 
 
 Before we do analysis, it's important to set up communication channels with the project champion. We usually have two separate ways. 1. working with internal team members, for example our research fellows in our lab 2. working with external collaborators, for example, people who are not familiar or don't have access to our internal communication tools.
 
-scenario 1: internal team. 
+scenario 1: internal team.
 
-- Slack: very light weight communication.
-Things you never need to refer back in the future of the project. For example, I like to use slack to set up check-in meetings with the champion after each analysis iteration. 
+-   Slack: very light weight communication. Things you never need to refer back in the future of the project. For example, I like to use slack to set up check-in meetings with the champion after each analysis iteration.
 
-- Asana: task specific communication
-Concrete task assignments should be documented on Asana. This is a place the project champion and the analyst should put the actual tasks we want to achieve. Ideally, we should put the "Done" criteria in the task so there is no misunderstandings.
+-   Asana: task specific communication Concrete task assignments should be documented on Asana. This is a place the project champion and the analyst should put the actual tasks we want to achieve. Ideally, we should put the "Done" criteria in the task so there is no misunderstandings.
 
-- Meetings: when we need to make a decision
-when we need to have deep discussion about the results and plan next steps based on the results what we currently have.
+-   Meetings: when we need to make a decision when we need to have deep discussion about the results and plan next steps based on the results what we currently have.
 
-- Email: only team-wise communication
-I don't really don't sent out team-wise emails. 
+-   Email: only team-wise communication I don't really don't sent out team-wise emails.
 
-
-scenario 2: external team. 
+scenario 2: external team.
 
 external collaboration in analysis usually is small projects. I actually just use emails to communicate since every knows how to read emails. I don't like to *force* external colloboraters to learn our lab's system.
-
 
 #### 2.2 set up a project on cstar github
 
@@ -58,8 +52,7 @@ When set up projects, take a few minutes to write down the project description i
 
 All the code and markdown documents should be pushed to the github project. But be careful that don't push data to the github page.
 
-
-#### 2.2 set up a data folder
+#### 2.3 set up a data folder
 
 Data should be saved on Maize or Dropbox. If it's medicare data, save on Maize. Other than Medicare data, we save data on UM Dropbox. Raw data and model results should not be save on github.
 
@@ -83,7 +76,7 @@ Cohort definition should be the first thing to do. Make sure to spend time to th
 
 I use [DiagrammeR](https://rich-iannone.github.io/DiagrammeR/) to create the cohort diagram in the CONSORT style. Here is an [example code](https://github.com/UMCSTaR/ECV_2.0/blob/main/code/functions/cohort_selection_diagram.R) I have used for a project. The benefit of coding diagram is that it helps in multiple iterations scenario. No numbers are hard coded, so if we change our cohort, we don't need to copy and paste numbers which can be very tedious and error-prone.
 
-I don't spend time making the diagram pretty, since it's not easy to do detailed plot editing using DiagrammeR. I save the diagram in svg and edited the font in omnigraffle. 
+I don't spend time making the diagram pretty, since it's not easy to do detailed plot editing using DiagrammeR. I save the diagram in svg and edited the font in omnigraffle.
 
 #### 4.2: lab notbooks
 
