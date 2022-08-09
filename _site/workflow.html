@@ -76,6 +76,9 @@ ul.task-list{list-style: none;}
   <li class="nav-item">
     <a class="nav-link active" href="./workflow.html" aria-current="page">Workflow</a>
   </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./pkgs.html">Packages and Repos</a>
+  </li>  
 </ul>
               <div id="quarto-search" class="" title="Search"></div>
           </div> <!-- /navcollapse -->
@@ -97,14 +100,14 @@ ul.task-list{list-style: none;}
   <li><a href="#step2-set-up-analysis-project" id="toc-step2-set-up-analysis-project" class="nav-link" data-scroll-target="#step2-set-up-analysis-project">Step2: Set up analysis project</a>
   <ul class="collapse">
   <li><a href="#communication-channels" id="toc-communication-channels" class="nav-link" data-scroll-target="#communication-channels">2.1 communication channels</a></li>
-  <li><a href="#set-up-a-project-on-cstar-github" id="toc-set-up-a-project-on-cstar-github" class="nav-link" data-scroll-target="#set-up-a-project-on-cstar-github">2.2 set up a project on cstar github</a></li>
+  <li><a href="#set-up-a-project-on-cstar-github" id="toc-set-up-a-project-on-cstar-github" class="nav-link" data-scroll-target="#set-up-a-project-on-cstar-github">2.2 set up a project on CSTAR github</a></li>
   <li><a href="#set-up-a-data-folder" id="toc-set-up-a-data-folder" class="nav-link" data-scroll-target="#set-up-a-data-folder">2.3 set up a data folder</a></li>
   </ul></li>
   <li><a href="#step3-analysis-plan" id="toc-step3-analysis-plan" class="nav-link" data-scroll-target="#step3-analysis-plan">Step3: Analysis Plan</a></li>
   <li><a href="#step4-analysis" id="toc-step4-analysis" class="nav-link" data-scroll-target="#step4-analysis">Step4: Analysis</a>
   <ul class="collapse">
   <li><a href="#cohort-definition-diagram" id="toc-cohort-definition-diagram" class="nav-link" data-scroll-target="#cohort-definition-diagram">4.1: Cohort Definition Diagram</a></li>
-  <li><a href="#lab-notbooks" id="toc-lab-notbooks" class="nav-link" data-scroll-target="#lab-notbooks">4.2: lab notbooks</a></li>
+  <li><a href="#lab-notebooks" id="toc-lab-notebooks" class="nav-link" data-scroll-target="#lab-notebooks">4.2: lab notebooks</a></li>
   </ul></li>
   <li><a href="#step5-finish-analysis" id="toc-step5-finish-analysis" class="nav-link" data-scroll-target="#step5-finish-analysis">Step5: Finish Analysis</a></li>
   </ul></li>
@@ -143,68 +146,72 @@ ul.task-list{list-style: none;}
 
 </header>
 
-<p>This document describes the general workflow for data analysis projects in the MedLab. This a workflow our lab and I have developed over 4 years of working in various of research projects.</p>
+<p>This document describes the general workflow for data analysis projects in the MedLab.</p>
 <section id="project-steps-overview" class="level2">
 <h2 class="anchored" data-anchor-id="project-steps-overview">Project steps overview</h2>
-<p><img src="workflow_diagram.png" class="img-fluid" width="337"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="workflow_diagram.png" class="img-fluid figure-img" width="337"></p>
+</figure>
+</div>
 <section id="step1-project-kick-off-meeting" class="level3">
 <h3 class="anchored" data-anchor-id="step1-project-kick-off-meeting">Step1: Project Kick off meeting</h3>
-<p>Every analysis project should have a kick off meeting. We follow the general idea of the <a href="https://www.uab.edu/ccts/images/Paper_sprints.pdf">paper print</a>. In this meeting, the research team, including PI, champion and potential co-authors, should join and have a discussion about research design and research questions. For analysts, we need to understand and clarify the research background and questions, so we can have concrete ideas of the project complexity and feasibility. For example, if the data or the important covaraites are available.</p>
-<p>Ideally, before the kick off meeting, the analyst should already be communicating with the project champion about research design plan. So the analyst can check the data availability and ask some clarifying questions before the kick-off meeting. This help the analyst to be more engaging in the kick off meeting.</p>
+<p>Every analysis project should have a kick off meeting. We follow the general idea of the <a href="https://www.uab.edu/ccts/images/Paper_sprints.pdf">paper print</a>. In this meeting, the research team, including PI, champion and potential co-authors, should join and have a discussion about research design and research questions. At this stage, everything can be changed and the switching cost is low. For analysts, we need to understand and clarify the research background and questions, so we can have concrete ideas of the project complexity and feasibility. For example, if the data or the important covaraites are available.</p>
+<p>Ideally, before the kick off meeting, the analyst should already be communicating with the project champion about research design plan. So the analyst can check the data availability and ask some clarifying questions before the kick-off meeting. This helps the analyst to be more engaging in the kick off meeting.</p>
 <p>If the analyst is already familiar with the data or research, it’s also helpful to have some descriptive data available in the kick off meeting. Just general table1 info, no need to run any models.</p>
 </section>
 <section id="step2-set-up-analysis-project" class="level3">
 <h3 class="anchored" data-anchor-id="step2-set-up-analysis-project">Step2: Set up analysis project</h3>
 <section id="communication-channels" class="level4">
 <h4 class="anchored" data-anchor-id="communication-channels">2.1 communication channels</h4>
-<p>Before we do analysis, it’s important to set up communication channels with the project champion. We usually have two separate ways. 1. working with internal team members, for example our research fellows in our lab 2. working with external collaborators, for example, people who are not familiar or don’t have access to our internal communication tools.</p>
+<p>Before we do analysis, it’s important to set up communication channels and expectations with the project champion. We usually have two separate ways. 1. internal team members, for example our research fellows in our lab 2. external collaborators, for example, people who are not familiar or don’t have access to our internal communication tools.</p>
 <p>scenario 1: internal team.</p>
 <ul>
-<li><p>Slack: very light weight communication. Things you never need to refer back in the future of the project. For example, I like to use slack to set up check-in meetings with the champion after each analysis iteration.</p></li>
-<li><p>Asana: task specific communication Concrete task assignments should be documented on Asana. This is a place the project champion and the analyst should put the actual tasks we want to achieve. Ideally, we should put the “Done” criteria in the task so there is no misunderstandings.</p></li>
-<li><p>Meetings: when we need to make a decision when we need to have deep discussion about the results and plan next steps based on the results what we currently have.</p></li>
-<li><p>Email: only team-wise communication I don’t really don’t sent out team-wise emails.</p></li>
+<li><p>Slack: very light weight communication. Things you never need to refer back in the future. For example, I like to use slack to set up check-in meetings with the champion after each analysis iteration.</p></li>
+<li><p>Asana: task specific communication. Task assignments should be documented on Asana. This is a place the project where champion and the analyst put the tasks we want to achieve. Ideally, we should put the “Done” criteria in the task so there is no misunderstandings.</p></li>
+<li><p>Meetings: when we need to make a decision and have deep discussion about the results and plan next steps based on the results what we currently have. Tip: always summarize the meeting in writing, so the research team can refer back. It can be posted on slack project channel.</p></li>
+<li><p>Email: only team-wise communication. Email is usually my last option to communicate project progress.</p></li>
 </ul>
 <p>scenario 2: external team.</p>
-<p>external collaboration in analysis usually is small projects. I actually just use emails to communicate since every knows how to read emails. I don’t like to <em>force</em> external colloboraters to learn our lab’s system.</p>
+<p>external collaborations are uaually small projects. I just use emails to communicate since everyone knows how to read emails. I don’t like to impose our system on external colloboraters.</p>
 </section>
 <section id="set-up-a-project-on-cstar-github" class="level4">
-<h4 class="anchored" data-anchor-id="set-up-a-project-on-cstar-github">2.2 set up a project on cstar github</h4>
-<p>Our lab use <a href="https://www.gitkraken.com/">GitKraken</a> to commit code to our <a href="https://github.com/UMCSTaR">github page</a>. We have a <a href="https://github.com/UMCSTaR/repo-template">template repo</a> on github. This template has pre-organized folders that are ideal for complicated projects. I usually start with the template when I know the projects can have multiple iterations. When doing a simple projects that don’t require multiple iterations, I just start an empty and add a few folders I see appropriate. see <a href="https://github.com/UMCSTaR/SIMPL_Tenwek">example</a>.</p>
+<h4 class="anchored" data-anchor-id="set-up-a-project-on-cstar-github">2.2 set up a project on CSTAR github</h4>
+<p>Our lab use <a href="https://www.gitkraken.com/">GitKraken</a> to commit code to our <a href="https://github.com/UMCSTaR">github page</a>. We have a <a href="https://github.com/UMCSTaR/repo-template">template repo</a> on github. This template has organized folders that are ideal for complix projects. I usually start with the template when I know the projects can have multiple iterations. When doing a simple projects that don’t require multiple iterations, I just start an empty and add a few folders I see appropriate. see <a href="https://github.com/UMCSTaR/SIMPL_Tenwek">example</a>.</p>
 <p>When set up projects, take a few minutes to write down the project description in the <em>About</em> section on github. This could help the team to locate the project in the future (after months and years). If working on complicated projects, invest some time to fill in the ReadME on github repo. The ReadME template is with the <a href="https://github.com/UMCSTaR/repo-template">template repo</a>.</p>
 <p>All the code and markdown documents should be pushed to the github project. But be careful that don’t push data to the github page.</p>
 </section>
 <section id="set-up-a-data-folder" class="level4">
 <h4 class="anchored" data-anchor-id="set-up-a-data-folder">2.3 set up a data folder</h4>
 <p>Data should be saved on Maize or Dropbox. If it’s medicare data, save on Maize. Other than Medicare data, we save data on UM Dropbox. Raw data and model results should not be save on github.</p>
-<p>Use the same project name on github to name data folder, so it’s easier to find the corresponding data in the future for the projects. Every project should have it’s own data folder.</p>
+<p>Use the same project name on github to name data folder, so it’s easier to find the corresponding data and code in the future for the projects. Every project should have it’s own data folder.</p>
 </section>
 </section>
 <section id="step3-analysis-plan" class="level3">
 <h3 class="anchored" data-anchor-id="step3-analysis-plan">Step3: Analysis Plan</h3>
-<p>Before starting analysis, the analyst and project champion should already have good shared understandings of the research questions and plan. Document the analysis plan for each iteration on Asana where the team can easily have access to. The plan is developed in meetings between the analyst and project champion. Share the meeting summaries and action items on the Slack project channel. The analysis plan generally only needs to cover one sprint. Don’t overplan things. The next steps are based on the current available results. The analyst should feel free to add more beyond the plan during the analysis, but always cover the agreed upon items.</p>
-<p>It’s important to set expectations between the project champion and analyst in the analysis plan phase. The project champion should give timely feedback to the analysis results. For example, in the analysis plan meeting, I usually would check the availability of the project champion and let them know what my workflow looks like. I usually update the results with them every week. I expect them to give me feedback of the results within 3 days. This is especially important in the beginning, because we want to make sure the analysis has met the expectations of the champion before we go too far. We should meet after each results so we can ask questions and plan for next sprint. If the project champion can’t be actively involved in the analysis, I usually won’t start the analysis until they have availability to be engaged with me. The switching cost of analysis is high if we have to pause and restart analysis often.</p>
+<p>Before starting analysis, the analyst and project champion should already have good shared understandings of the research questions and plan. The initial analysis plan can be broad and vague. The concrete action items and plan should be developed after each analysis iterations. Having some results help us understand the projects better. If invest too much time in planning everything in the beginning, once the plan has changed (very likely going to be), the effort of the planning would be wasted. Document the analysis plan for each iteration on Asana where the team can easily have access to. An additional tip is to share the meeting summaries and action items on the Slack project channel, so the other team members who are not in the meeting are aware of the project development. The analysis plan generally only needs to cover one sprint. The next steps are based on the current available results. The analyst should feel free to add more beyond the plan during the analysis, but always cover the agreed upon items.</p>
+<p>It’s important to set expectations between the project champion and analyst in the analysis plan phase. The project champion should give timely feedback to the analysis results. For example, in the analysis plan meeting, I usually would check the availability of the project champion and let them know what my availability for the project. I update the results with them every week. I expect them to give me feedback of the results within 3 days. This is especially important in the beginning, because we want to make sure the analysis has met the expectations of the champion before we go too far. We should meet after each analysis interation so we can ask questions and plan for next sprint. If the project champion can’t be actively involved in the analysis, I usually won’t start the analysis until they have availability to be work closely me. The switching cost of analysis is high if we have to pause and restart analysis often.</p>
 </section>
 <section id="step4-analysis" class="level3">
 <h3 class="anchored" data-anchor-id="step4-analysis">Step4: Analysis</h3>
 <p>Generally, the first round of analysis should be cohort definition and descriptive. Then we can move to model-based analysis and visualization.</p>
-<p>The rule of thumb is to share results early and keep in touch with the project champion frequently. Don’t spend too much time to formatting, like fond or visualization etc. It’s better to share the work in progress results early with the project champion and have a meeting to go through the results first. In the meeting, the project champion should give feedback and ask clarifying questions regarding the results. The analyst can share the plan for next steps. This allows for faster iteration and more transparent communication. I usually would update the project champion every week. Even if you didn’t finish the analysis in a week, still offer to show the project champion with what you have and let them know the timeline of when you can finish.</p>
+<p>The rule of thumb is to share results early and keep in touch with the project champion frequently. Don’t spend too much time in formatting, like fond or visualization etc. It’s better to share the work in progress results early with the project champion and have a meeting to go through the results first. In the meeting, the project champion should give feedback and ask clarifying questions regarding the results. The analyst can share the plan for next steps. This allows for faster iteration and more transparent communication. I usually would update the project champion every week. Even if you didn’t finish the analysis in a week, still offer to show the project champion with what you have and let them know the timeline of when you can finish.</p>
 <section id="cohort-definition-diagram" class="level4">
 <h4 class="anchored" data-anchor-id="cohort-definition-diagram">4.1: Cohort Definition Diagram</h4>
-<p>Cohort definition should be the first thing to do. Make sure to spend time to think, communicate and document the cohort selection process is important. Re-definiing cohort later in the analysis process cost a lot time and effort. Cohort definition should be research theory driven instead of “results” driven. Looking at results to define cohort can lead to p-hacking.</p>
+<p>Cohort definition should be the first thing to do. Make sure to spend time to think, communicate and document the cohort selection process is important. Re-defining cohort later in the analysis process cost a lot time and effort. Cohort definition should be research theory driven instead of “results” driven. Looking at results to define cohort can lead to p-hacking.</p>
 <p>I use <a href="https://rich-iannone.github.io/DiagrammeR/">DiagrammeR</a> to create the cohort diagram in the CONSORT style. Here is an <a href="https://github.com/UMCSTaR/ECV_2.0/blob/main/code/functions/cohort_selection_diagram.R">example code</a> I have used for a project. The benefit of coding diagram is that it helps in multiple iterations scenario. No numbers are hard coded, so if we change our cohort, we don’t need to copy and paste numbers which can be very tedious and error-prone.</p>
 <p>I don’t spend time making the diagram pretty, since it’s not easy to do detailed plot editing using DiagrammeR. I save the diagram in svg and edited the font in omnigraffle.</p>
 </section>
-<section id="lab-notbooks" class="level4">
-<h4 class="anchored" data-anchor-id="lab-notbooks">4.2: lab notbooks</h4>
-<p>Lab notebooks are used to communicate results with the Champion primarily. Notebooks don’t need to be too detailed since they are still work in progress products. It’s helpful to schedule meeting with the project champion to go through the results so everyone is on the same page. Also, by having meeting after the notebook results, we don’t have to write down every details of the model specs and interpretations. Explanations can be done in the meeting.</p>
-<p>I generate HTML documents using Rmarkdown. Then, I create a lab notebook folder for each project under dropbox. So every team member can have access to the notebooks but still not publicly accessible. I don’t send html documents via email since the recipients have to download the documents in order to view. It’s easier to include dropbox inks in the email.</p>
+<section id="lab-notebooks" class="level4">
+<h4 class="anchored" data-anchor-id="lab-notebooks">4.2: lab notebooks</h4>
+<p>Lab notebooks are used to communicate results with the project champion primarily. Notebooks don’t need to be too detailed since they are still work in progress products. It’s helpful to schedule meeting with the project champion to go through the results so everyone is on the same page. Also, by having meeting after the notebook results, we don’t have to write down every details of the model specs and interpretations. Explanations can be done in the meeting.</p>
+<p>I generate HTML documents using Rmarkdown. Then, I create a lab notebook folder for each project on our lab Dropbox. So every team member can have access to the notebooks but still not publicly accessible. I don’t send html documents via email since the recipients have to download the documents in order to view. It’s easier to include dropbox inks in the email.</p>
 <p>Lab notebooks can be rough in the beginning of the analysis, since the cohort and our analysis usually changes. Concentrating on faster iterations in the early stage is more important than having polished results. However, when the analyses are done, we should have good documents that the champion and the research team can refer back months down the road.</p>
 </section>
 </section>
 <section id="step5-finish-analysis" class="level3">
 <h3 class="anchored" data-anchor-id="step5-finish-analysis">Step5: Finish Analysis</h3>
-<p>After the analysis is done, spend sometime to organize the code so that it’s easier to reference back in the future. I have used the R package <a href="https://cran.r-project.org/web/packages/targets/index.html">targets</a> to manage my analytic workflow.</p>
+<p>After the analysis is done, spend sometime to organize the code so that it’s easier to reference back in the future. I have used the R package <a href="https://cran.r-project.org/web/packages/targets/index.html">targets</a> to manage my analytic workflow. But I also found just name the scripts using numbers are also good enough.</p>
 
 
 </section>

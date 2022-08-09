@@ -1,0 +1,21 @@
+---
+title: "Internal Tool Packages and Repos"
+subtitle: "Brief guide of our internal tool packages and repos"
+author: Xilin Chen
+date: 07/28/2022
+format:
+  html:
+    toc: true
+    toc-depth: 4
+editor: visual
+---
+
+This documents give you a brief intro of some useful internal packages we have built. You still need to go to each packages to learn more, but I hope this can give you a intro and help you find things.
+
+## medicareR
+
+[medicareR](https://github.com/UMCSTaR/medicareR) is a data management package to process medicare data. The analysts usually don't need to use this package. Data manager used this to process incoming medicare data annually.
+
+## medicareAnalytics
+
+[medicareAnalytics](https://github.com/UMCSTaR/medicareAnalytics) is a toolkit package that includes some commonly used data manipulation and visulazation functions.

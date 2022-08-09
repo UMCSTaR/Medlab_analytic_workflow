@@ -8,6 +8,8 @@ website:
     left:
       - href: workflow.qmd
         text: Workflow
+      - href: pkgs.qmd
+        text: Packages and Repos
 
 format:
   html:
