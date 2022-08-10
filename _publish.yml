@@ -1,0 +1,4 @@
+- source: project
+  quarto-pub:
+    - id: 690f4f61-ce8a-48aa-85dd-86febadf334d
+      url: 'https://quartopub.com/sites/xilinchen/manual-for-data-analysts'

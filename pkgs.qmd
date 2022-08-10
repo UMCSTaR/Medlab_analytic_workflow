@@ -18,4 +18,4 @@ This documents give you a brief intro of some useful internal packages we have b
 
 ## medicareAnalytics
 
-[medicareAnalytics](https://github.com/UMCSTaR/medicareAnalytics) is a toolkit package that includes some commonly used data manipulation and visulazation functions.
+[medicareAnalytics](https://github.com/UMCSTaR/medicareAnalytics) is a toolkit package that includes some commonly used data manipulation and visualization functions.
