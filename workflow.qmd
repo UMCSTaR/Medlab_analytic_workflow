@@ -34,9 +34,7 @@ Before we do analysis, it's important to set up communication channels and expec
 
 -   Slack direct message: very light weight communication. Things we never need to refer back in the future. For example, I like to use slack to set up check-in meetings with the champion after each analysis iteration.
 
--   Slack project channel: a unque slack project channel is created for each project. Questions, discussions or anything that you want the whole research project team to see can be posted here. This helps the whole research team to be involved in the project development asynchronously and avoid sending out team-wise emails.
-
-<!-- -->
+-   Slack project channel: a unique slack project channel is created for each project. Questions, discussions or anything that you want the whole research project team to see can be posted here. This helps the whole research team to be involved in the project development asynchronously and avoid sending out team-wise emails.
 
 -   Asana: task specific communication. Task assignments should be documented on Asana. This is a place where champion and the analyst put the tasks we want to accomplish. Ideally, we should put the "Done" criteria in the task so there is no misunderstandings. Task related discussions are also encouraged to happen here.
 
@@ -44,7 +42,7 @@ Before we do analysis, it's important to set up communication channels and expec
 
 -   Email: only team-wise communication. Email is usually my last option to communicate project progress.
 
-scenario 2: external team.
+**external team**
 
 external collaborations are usually small projects. I just use emails to communicate since everyone knows how to read emails. I don't like to impose our system on external collaborators.
 
@@ -66,7 +64,7 @@ Use the same project name on github to name data folder, so it's easier to find 
 
 ### Step3: Analysis Plan
 
-BThe initial analysis plan can be broad and vague. The action items and plan should be developed after each analysis iterations. Having some results help us understand the projects better. If invest too much time in planning everything in the beginning, once the plan has changed (very likely going to be), the effort of the planning would be wasted. It also help us to be less attached to certain reasearch ideas and approaches. Document the analysis plan for each iteration on Asana or Slack project channel where the team can easily have access to. Share the meeting summaries and action items on the Slack project channel, so the other team members who are not in the meeting are aware of the project development. The analysis plan generally only needs to cover one sprint. The next steps are based on the current available results. The analyst should feel free to add more beyond the plan during the analysis, but always cover the agreed upon items.
+The initial analysis plan can be broad and vague. The action items and plan should be developed after each analysis iterations. Having some results help us understand the projects better. If invest too much time in planning everything in the beginning, once the plan has changed (very likely going to be), the effort of the planning would be wasted. It also help us to be less attached to certain research ideas and approaches. Document the analysis plan for each iteration on Asana or Slack project channel where the team can easily have access to. Share the meeting summaries and action items on the Slack project channel, so the other team members who are not in the meeting are aware of the project development. The analysis plan generally only needs to cover one sprint. The next steps are based on the current available results. The analyst should feel free to add more beyond the plan during the analysis, but always cover the agreed upon items.
 
 It's important to set expectations between the project champion and analyst in the analysis plan phase. The project champion should give timely feedback to the analysis results. For example, in the analysis plan meeting, I usually would check the availability of the project champion and let them know what my availability for the project. I update the results with them every week. I expect them to give me feedback of the results within 3 days. This is especially important in the beginning, because we want to make sure the analysis has met the expectations of the champion before we go too far. We should meet after each analysis iteration so we can ask questions and plan for next sprint. If the project champion can't be actively involved in the analysis, I usually won't start the analysis until they have availability to be work closely me. The switching cost is high if we have to pause and restart analysis often.
 
@@ -78,7 +76,7 @@ The rule of thumb is to share results early and keep in touch with the project c
 
 #### 4.1: Cohort Definition Diagram
 
-Cohort definition should be the first thing to do. Make sure to spend time to think, communicate and document the cohort selection process is important. Re-defining cohort later in the analysis process cost a lot time, effort and frastration. Cohort definition should be research theory driven instead of "results" driven. Looking at results to define cohort can lead to p-hacking.
+Cohort definition should be the first thing to do. Make sure to spend time to think, communicate and document the cohort selection process is important. Re-defining cohort later in the analysis process cost a lot time, effort and frustration. Cohort definition should be research theory driven instead of "results" driven. Looking at results to define cohort can lead to p-hacking.
 
 I use [DiagrammeR](https://rich-iannone.github.io/DiagrammeR/) to create the cohort diagram in the CONSORT style. Here is an [example code](https://github.com/UMCSTaR/medicareAnalytics/blob/master/R/cohort_selection_diagram.R) I have used for medicare projects. The benefit of coding diagram is that it helps in multiple iterations scenario. No numbers are hard coded, so if we change our cohort, we don't need to copy and paste numbers which can be very tedious and error-prone.
 
@@ -96,12 +94,16 @@ Lab notebooks can be rough in the beginning of the analysis, since the cohort an
 
 After the analysis is done, spend sometime to organize the code so that it's easier to reference back in the future. I have used the R package [targets](https://cran.r-project.org/web/packages/targets/index.html) to manage my analytic workflow. But I also found just name the scripts using numbers are also good enough.
 
-## Other notes
+## Q & A
 
-1.  Key articles that are used for statistical analysis
+1.  Where are the key articles that are used for statistical analysis?
 
 important reference articles are saved on Zotero at *UofM MEDLab -\> Research Resources -\> Methods -\> 1. Key Articles*
 
-2.  How to use Asana to get feedback from champions and team
+2.  How to use Asana to get feedback from champions and team?
 
 The analyst and project champion should assign tasks under Asana projects. Document "Done" criteria under each tasks if it's not clear. Once the tasks are finished, tag the project champion to review the results and ask for feedback.
+
+3.  Where are the project data?
+
+Projects that used medicare data are on maize; Other projects data are on MedLab Dropbox. Each project has its own data folder. The data folder shares the same key word of the project name on github. Note, the project name on github and data folder might be different, but they share keywords that represent the research project.
