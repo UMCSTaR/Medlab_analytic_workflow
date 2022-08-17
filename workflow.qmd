@@ -2,7 +2,7 @@
 title: "Analytic Workflow for Research Projects"
 subtitle: "A guide for data analyst in a research lab" 
 author: Xilin Chen
-date: 07/11/2022
+date: 08/19/2022
 format:
   html:
     toc: true
@@ -16,9 +16,9 @@ This document describes the general workflow for data analysis projects in the M
 
 ![](workflow_diagram.png){fig-align="center" width="337"}
 
-### Step1: Project Kick off meeting
+### Step1: Project kick off meeting
 
-A research project starts with a kick off meeting. We follow the general idea of the [paper print](https://www.uab.edu/ccts/images/Paper_sprints.pdf). In this meeting, the research team, including PI, champion and potential co-authors, should join and have a discussion about research design and research questions. At this stage, everything can be changed and the switching cost is the lowest. For analysts, we need to understand and clarify the research background and questions, so we can have concrete ideas of the project complexity and feasibility. For example, if the data or the important covaraites are available. Be open about different ideas, since we might need to use them later in the analysis exploration.
+A research project starts with a kick off meeting. We follow the general idea of the [paper print](https://www.uab.edu/ccts/images/Paper_sprints.pdf). In this meeting, the research team, including PI, champion and potential co-authors, should join and have a discussion about research design and research questions. At this stage, everything can be changed and the switching cost is the lowest. For analysts, we need to understand and clarify the research background and questions, so we can have concrete ideas of the project complexity and feasibility. For example, if the data or the important covaraites are available. Be open about different ideas, since we might need to use them later in the analysis exploration. I am usually less open or more critical about new ideas later in the analysis, since the switching cost is high.
 
 Ideally, before the kick off meeting, the analyst should already be communicating with the project champion about research design plan. So the analyst can check the data availability and ask some clarifying questions before the kick-off meeting. This helps the analyst to be more engaging in the kick off meeting.
 
